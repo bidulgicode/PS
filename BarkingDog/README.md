@@ -1,2 +1,2 @@
 # BarkingDog
-한글한글한글한글
+https://blog.encrypted.gg/

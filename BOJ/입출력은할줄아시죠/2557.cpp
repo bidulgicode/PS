@@ -6,8 +6,7 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     
-    // 킹글
-    cout << "킹글" << endl;
+    cout << "Hello World!" << endl;
     
     return 0;
 }

@@ -15,6 +15,7 @@ int main()
     cin >> s;
     int len = 0;
     // string size = 5 & capacity = 15
+    // s[i]가 문자없는곳에 가면?
     for (int i = 0; s[i]; i++){
         len += 1;
     }

@@ -30,10 +30,17 @@ int main()
         // 1. 대소문자 구분, 2. 각 문자별 숫자로 대소 비교 가능
         // EX) D, F, A의 경우 D < F 이므로 -1, D > A 이므로 1 반환
         // 이 람다 함수의 경우 -1인 경우에만 true를 리턴함.
-        cout << u << '\n';
-        cout << v << '\n';
+
+        // u, v는 백터 a에 포함된 원소들
+        // 이 원소들의 우선순위를 문자열 s와 조합하여 만들기 때문에
+        // 2 0 1 3 4 5 이런식의 sort 결과가 나옴
+        cout << u << ',' << v << '\n';
+        cout << s.c_str() + u << ',' << s.c_str() + v << '\n';
         return strcmp(s.c_str() + u, s.c_str() + v) < 0;
     });
-
+    
+    for(auto &x : a){
+        cout << s.substr(x) << '\n';
+    }
     return 0;
 }

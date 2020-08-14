@@ -1,11 +1,14 @@
 // BOJ_2747_피보나치 수
 #include <iostream>
+#include <vector>
 using namespace std;
 
 // 피보나치 수 예시
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
 // 이전 방법이 너무 느리기 때문에 메모이제이션을 추가한 방법
 
+// 벡터 써도 됨
+// vector<int> memo, memo.resize(n+1), vector<int> memo(N+1)
 int memo[50];
 int fibonacci(int n)
 {
@@ -30,6 +33,7 @@ int main()
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     int n;
+    // vector<int> dpdp(n + 1, 0);
     cin >> n;
     cout << fibonacci(n) << '\n';
 

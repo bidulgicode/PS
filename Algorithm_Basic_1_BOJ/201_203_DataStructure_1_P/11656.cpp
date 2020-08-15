@@ -43,7 +43,7 @@ int main()
         // 대략 O(logn)?
         cout << u << ',' << v << '\n';
         cout << s.c_str() + u << ',' << s.c_str() + v << '\n';
-        return strcmp(s.c_str() + u, s.c_str() + v) < 0;
+        return strcmp(s.c_str() + u, s.c_str() + v) < 0; // 왼쪽이 크면 false 오른쪽이 크면 ture가 된다.
     });
     
     for(auto &x : a){
